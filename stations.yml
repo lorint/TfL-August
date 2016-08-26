@@ -1,0 +1,1446 @@
+---
+- !ruby/object:Station
+  name: Queen's Park
+  lines:
+  - &1 !ruby/object:Line
+    name: Bakerloo Line
+    forwards_direction: north
+    backwards_direction: south
+    stations:
+    - Queen's Park
+    - Kilburn Park
+    - Maida Vale
+    - Warwick Avenue
+    - Paddington
+    - Edgware Road
+    - Marylebone
+    - Baker Street
+    - Regent's Park
+    - Oxford Circus
+    - Piccadilly Circus
+    - Charing Cross
+    - Embankment
+    - River Thames
+    - Waterloo
+    - Lambeth North
+    - Elephant & Castle
+- !ruby/object:Station
+  name: Kilburn Park
+  lines:
+  - *1
+- !ruby/object:Station
+  name: Maida Vale
+  lines:
+  - *1
+- !ruby/object:Station
+  name: Warwick Avenue
+  lines:
+  - *1
+- !ruby/object:Station
+  name: Paddington
+  lines:
+  - *1
+  - &3 !ruby/object:Line
+    name: District Turnham Green to Edgware Road
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Turnham Green
+    - Stamford Brook
+    - Ravenscourt Park
+    - Hammersmith
+    - Barons Court
+    - West Kensington
+    - Kensington (Olympia)
+    - Earl's Court
+    - High Street Kensington
+    - Notting Hill Gate
+    - Bayswater
+    - Paddington
+    - Edgware Road
+  - &4 !ruby/object:Line
+    name: District - Kensington Olympia Branch
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Wimbledon
+    - Wimbledon Park
+    - Southfields
+    - East Putney
+    - Putney Bridge
+    - Parsons Green
+    - Fulham Broadway
+    - West Brompton
+    - Earl's Court
+    - High Street Kensington
+    - Notting Hill Gate
+    - Bayswater
+    - Paddington
+    - Edgware Road
+  - &5 !ruby/object:Line
+    name: Hammersmith & City Line
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Hammersmith
+    - Goldhawk Road
+    - Shepherd's Bush Market
+    - White City
+    - Wood Lane
+    - Latimer Road
+    - Ladbroke Grove
+    - Westbourne Park
+    - Royal Oak
+    - Paddington
+    - Edgware Road
+    - Baker Street
+    - Great Portland Street
+    - Euston Square
+    - King's Cross St. Pancras
+    - Farringdon
+    - Barbican
+    - Moorgate
+    - Liverpool Street
+    - Aldgate East
+    - St. Mary's (Whitechapel Road)
+    - Whitechapel
+    - Stepney Green
+    - Mile End
+    - Bow Road
+- !ruby/object:Station
+  name: Edgware Road
+  lines:
+  - *1
+  - &2 !ruby/object:Line
+    name: Circle Line
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Hammersmith
+    - Goldhawk Road
+    - Shepherd's Bush Market
+    - Wood Lane
+    - Latimer Road
+    - Ladbroke Grove
+    - Westbourne Park
+    - Royal Oak
+    - 'Paddington Mainline Station (Platforms '
+    - Edgware Road
+    - Baker Street
+    - Great Portland Street
+    - Euston Square
+    - Farringdon
+    - Barbican
+    - Moorgate
+    - Liverpool Street
+    - Aldgate
+    - Tower Hill
+    - Monument
+    - Cannon Street
+    - Mansion House
+    - Blackfriars
+    - Temple
+    - Embankment
+    - Westminster
+    - St. James's Park
+    - Victoria
+    - Sloane Square
+    - South Kensington
+    - Gloucester Road
+    - High Street Kensington
+    - Notting Hill Gate
+    - Bayswater
+    - Edgware Road
+  - *2
+  - *3
+  - *4
+  - *5
+- !ruby/object:Station
+  name: Marylebone
+  lines:
+  - *1
+- !ruby/object:Station
+  name: Baker Street
+  lines:
+  - *1
+  - *2
+  - *5
+  - &6 !ruby/object:Line
+    name: Jubilee Line
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Stanmore
+    - Canons Park
+    - Queensbury
+    - Kingsbury
+    - Wembley Park
+    - Neasden
+    - Dollis Hill
+    - Willesden Green
+    - Kilburn
+    - West Hampstead
+    - Finchley Road
+    - Swiss Cottage
+    - St. John's Wood
+    - Baker Street
+    - Bond Street
+    - Green Park
+    - Charing Cross
+    - Aldwych
+    - Ludgate Circus
+    - Cannon Street
+    - Fenchurch Street
+  - &15 !ruby/object:Line
+    name: Metropolitan Line
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Aldgate
+    - Baker Street
+    - Finchley Road
+    - Wembley Park
+    - Preston Road
+    - Northwick Park
+    - Harrow-on-the-Hill
+    - West Harrow
+    - Rayners Lane
+- !ruby/object:Station
+  name: Regent's Park
+  lines:
+  - *1
+- !ruby/object:Station
+  name: Oxford Circus
+  lines:
+  - *1
+  - &8 !ruby/object:Line
+    name: Central Line
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Leytonstone
+    - Leyton
+    - Stratford
+    - Mile End
+    - Bethnal Green
+    - Liverpool Street
+    - Bank
+    - St. Paul's
+    - Chancery Lane
+    - Holborn
+    - British Museum
+    - Tottenham Court Road
+    - Oxford Circus
+    - Bond Street
+    - Marble Arch
+    - Lancaster Gate
+    - Queensway
+    - Notting Hill Gate
+    - Holland Park
+  - &16 !ruby/object:Line
+    name: Victoria Line
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Walthamstow Central
+    - Blackhorse Road
+    - Tottenham Hale
+    - Seven Sisters
+    - Finsbury Park
+    - Highbury & Islington
+    - King's Cross St. Pancras
+    - Euston
+    - Warren Street
+    - Oxford Circus
+    - Green Park
+    - Victoria
+    - Pimlico
+    - Vauxhall
+    - Stockwell
+    - Brixton
+- !ruby/object:Station
+  name: Piccadilly Circus
+  lines:
+  - *1
+  - &13 !ruby/object:Line
+    name: Piccadilly Line - Uxbridge Branch
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Cockfosters
+    - Oakwood
+    - Southgate
+    - Arnos Grove
+    - Bounds Green
+    - Wood Green
+    - Turnpike Lane
+    - Manor House
+    - Finsbury Park
+    - Arsenal
+    - Holloway Road
+    - Caledonian Road
+    - York Road
+    - King's Cross St. Pancras
+    - Russell Square
+    - Holborn
+    - Aldwych
+    - Covent Garden
+    - Leicester Square
+    - Piccadilly Circus
+    - Green Park
+    - Down Street
+    - Hyde Park Corner
+    - Knightsbridge
+    - Brompton Road
+    - South Kensington
+    - Gloucester Road
+    - Earl's Court
+    - Barons Court
+    - Hammersmith
+    - Acton Town
+    - Ealing Common
+    - North Ealing
+    - Park Royal
+    - Park Royal & Twyford Abbey
+    - Alperton
+    - Sudbury Town
+    - Sudbury Hill
+    - South Harrow
+    - Rayners Lane
+    - Uxbridge
+  - &14 !ruby/object:Line
+    name: Piccadilly Line - Heathrow Branch
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Cockfosters
+    - Oakwood
+    - Southgate
+    - Arnos Grove
+    - Bounds Green
+    - Wood Green
+    - Turnpike Lane
+    - Manor House
+    - Finsbury Park
+    - Arsenal
+    - Holloway Road
+    - Caledonian Road
+    - York Road
+    - King's Cross St. Pancras
+    - Russell Square
+    - Holborn
+    - Aldwych
+    - Covent Garden
+    - Leicester Square
+    - Piccadilly Circus
+    - Green Park
+    - Down Street
+    - Hyde Park Corner
+    - Knightsbridge
+    - Brompton Road
+    - South Kensington
+    - Gloucester Road
+    - Earl's Court
+    - Barons Court
+    - Hammersmith
+    - Acton Town
+    - South Ealing
+    - Northfields
+    - Boston Manor
+    - Osterley
+    - Hounslow East
+    - Hounslow Central
+    - Hounslow West
+    - Hatton Cross
+    - Heathrow T123
+    - Heathrow Terminal 5
+- !ruby/object:Station
+  name: Charing Cross
+  lines:
+  - *1
+  - *6
+  - &7 !ruby/object:Line
+    name: Northern Line - Charing Cross Branch
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - High Barnet
+    - Totteridge and Whetstone
+    - Woodside Park
+    - West Finchley
+    - Finchley Central
+    - East Finchley
+    - Highgate
+    - Archway
+    - Tufnell Park
+    - Kentish Town
+    - Camden Town
+    - Mornington Crescent
+    - Euston
+    - Warren Street
+    - Goodge Street
+    - Tottenham Court Road
+    - Leicester Square
+    - Charing Cross
+    - Embankment
+    - Waterloo
+    - Kennington
+- !ruby/object:Station
+  name: Embankment
+  lines:
+  - *1
+  - *2
+  - &9 !ruby/object:Line
+    name: District - Ealing Broadway Branch (to Bow Road)
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Ealing Broadway
+    - Ealing Common
+    - Acton Town
+    - Chiswick Park
+    - Turnham Green
+    - Stamford Brook
+    - Ravenscourt Park
+    - Hammersmith
+    - Barons Court
+    - West Kensington
+    - Kensington (Olympia)
+    - Earl's Court
+    - Gloucester Road
+    - South Kensington
+    - Sloane Square
+    - Victoria
+    - St. James's Park
+    - Westminster
+    - Embankment
+    - Temple
+    - Blackfriars
+    - Mansion House
+    - Cannon Street
+    - Monument
+    - Tower Hill
+    - Aldgate East
+    - Whitechapel
+    - Stepney Green
+    - Mile End
+    - Bow Road
+  - &10 !ruby/object:Line
+    name: District Wimbledon to Bow Road
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Wimbledon
+    - Wimbledon Park
+    - Southfields
+    - East Putney
+    - Putney Bridge
+    - Parsons Green
+    - Fulham Broadway
+    - West Brompton
+    - Earl's Court
+    - Gloucester Road
+    - South Kensington
+    - Sloane Square
+    - Victoria
+    - St. James's Park
+    - Westminster
+    - Embankment
+    - Temple
+    - Blackfriars
+    - Mansion House
+    - Cannon Street
+    - Monument
+    - Tower Hill
+    - Aldgate East
+    - Whitechapel
+    - Stepney Green
+    - Mile End
+    - Bow Road
+  - *7
+- !ruby/object:Station
+  name: River Thames
+  lines:
+  - *1
+- !ruby/object:Station
+  name: Waterloo
+  lines:
+  - *1
+  - *7
+  - &12 !ruby/object:Line
+    name: Waterloo & City Line
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Bank
+    - Waterloo
+- !ruby/object:Station
+  name: Lambeth North
+  lines:
+  - *1
+- !ruby/object:Station
+  name: Elephant & Castle
+  lines:
+  - *1
+  - &11 !ruby/object:Line
+    name: Northern Line - Bank branch
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Edgware
+    - Burnt Oak
+    - Colindale
+    - Hendon Central
+    - Brent Cross
+    - Golders Green
+    - North End
+    - Hampstead
+    - Belsize Park
+    - Chalk Farm
+    - Camden Town
+    - Mornington Crescent
+    - Euston
+    - King's Cross St. Pancras
+    - Angel
+    - City Road
+    - Old Street
+    - Moorgate
+    - Lothbury
+    - Bank
+    - London Bridge
+    - Borough
+    - Elephant & Castle
+    - Kennington
+    - Oval
+    - Stockwell
+    - Clapham North
+    - Clapham Common
+    - Clapham South
+    - Balham
+    - Tooting Bec
+    - Tooting Broadway
+    - Colliers Wood
+    - South Wimbledon
+    - Morden
+- !ruby/object:Station
+  name: Leytonstone
+  lines:
+  - *8
+- !ruby/object:Station
+  name: Leyton
+  lines:
+  - *8
+- !ruby/object:Station
+  name: Stratford
+  lines:
+  - *8
+- !ruby/object:Station
+  name: Mile End
+  lines:
+  - *8
+  - *9
+  - *10
+  - *5
+- !ruby/object:Station
+  name: Bethnal Green
+  lines:
+  - *8
+- !ruby/object:Station
+  name: Liverpool Street
+  lines:
+  - *8
+  - *2
+  - *5
+- !ruby/object:Station
+  name: Bank
+  lines:
+  - *8
+  - *11
+  - *12
+- !ruby/object:Station
+  name: St. Paul's
+  lines:
+  - *8
+- !ruby/object:Station
+  name: Chancery Lane
+  lines:
+  - *8
+- !ruby/object:Station
+  name: Holborn
+  lines:
+  - *8
+  - *13
+  - *14
+- !ruby/object:Station
+  name: British Museum
+  lines:
+  - *8
+- !ruby/object:Station
+  name: Tottenham Court Road
+  lines:
+  - *8
+  - *7
+- !ruby/object:Station
+  name: Bond Street
+  lines:
+  - *8
+  - *6
+- !ruby/object:Station
+  name: Marble Arch
+  lines:
+  - *8
+- !ruby/object:Station
+  name: Lancaster Gate
+  lines:
+  - *8
+- !ruby/object:Station
+  name: Queensway
+  lines:
+  - *8
+- !ruby/object:Station
+  name: Notting Hill Gate
+  lines:
+  - *8
+  - *2
+  - *3
+  - *4
+- !ruby/object:Station
+  name: Holland Park
+  lines:
+  - *8
+- !ruby/object:Station
+  name: Hammersmith
+  lines:
+  - *2
+  - *9
+  - *3
+  - *5
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Goldhawk Road
+  lines:
+  - *2
+  - *5
+- !ruby/object:Station
+  name: Shepherd's Bush Market
+  lines:
+  - *2
+  - *5
+- !ruby/object:Station
+  name: Wood Lane
+  lines:
+  - *2
+  - *5
+- !ruby/object:Station
+  name: Latimer Road
+  lines:
+  - *2
+  - *5
+- !ruby/object:Station
+  name: Ladbroke Grove
+  lines:
+  - *2
+  - *5
+- !ruby/object:Station
+  name: Westbourne Park
+  lines:
+  - *2
+  - *5
+- !ruby/object:Station
+  name: Royal Oak
+  lines:
+  - *2
+  - *5
+- !ruby/object:Station
+  name: 'Paddington Mainline Station (Platforms '
+  lines:
+  - *2
+- !ruby/object:Station
+  name: Great Portland Street
+  lines:
+  - *2
+  - *5
+- !ruby/object:Station
+  name: Euston Square
+  lines:
+  - *2
+  - *5
+- !ruby/object:Station
+  name: Farringdon
+  lines:
+  - *2
+  - *5
+- !ruby/object:Station
+  name: Barbican
+  lines:
+  - *2
+  - *5
+- !ruby/object:Station
+  name: Moorgate
+  lines:
+  - *2
+  - *5
+  - *11
+- !ruby/object:Station
+  name: Aldgate
+  lines:
+  - *2
+  - *15
+- !ruby/object:Station
+  name: Tower Hill
+  lines:
+  - *2
+  - *9
+  - *10
+- !ruby/object:Station
+  name: Monument
+  lines:
+  - *2
+  - *9
+  - *10
+- !ruby/object:Station
+  name: Cannon Street
+  lines:
+  - *2
+  - *9
+  - *10
+  - *6
+- !ruby/object:Station
+  name: Mansion House
+  lines:
+  - *2
+  - *9
+  - *10
+- !ruby/object:Station
+  name: Blackfriars
+  lines:
+  - *2
+  - *9
+  - *10
+- !ruby/object:Station
+  name: Temple
+  lines:
+  - *2
+  - *9
+  - *10
+- !ruby/object:Station
+  name: Westminster
+  lines:
+  - *2
+  - *9
+  - *10
+- !ruby/object:Station
+  name: St. James's Park
+  lines:
+  - *2
+  - *9
+  - *10
+- !ruby/object:Station
+  name: Victoria
+  lines:
+  - *2
+  - *9
+  - *10
+  - *16
+- !ruby/object:Station
+  name: Sloane Square
+  lines:
+  - *2
+  - *9
+  - *10
+- !ruby/object:Station
+  name: South Kensington
+  lines:
+  - *2
+  - *9
+  - *10
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Gloucester Road
+  lines:
+  - *2
+  - *9
+  - *10
+  - *13
+  - *14
+- !ruby/object:Station
+  name: High Street Kensington
+  lines:
+  - *2
+  - *3
+  - *4
+- !ruby/object:Station
+  name: Bayswater
+  lines:
+  - *2
+  - *3
+  - *4
+- !ruby/object:Station
+  name: Ealing Broadway
+  lines:
+  - *9
+- !ruby/object:Station
+  name: Ealing Common
+  lines:
+  - *9
+  - *13
+- !ruby/object:Station
+  name: Acton Town
+  lines:
+  - *9
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Chiswick Park
+  lines:
+  - *9
+- !ruby/object:Station
+  name: Turnham Green
+  lines:
+  - *9
+  - *3
+- !ruby/object:Station
+  name: Stamford Brook
+  lines:
+  - *9
+  - *3
+- !ruby/object:Station
+  name: Ravenscourt Park
+  lines:
+  - *9
+  - *3
+- !ruby/object:Station
+  name: Barons Court
+  lines:
+  - *9
+  - *3
+  - *13
+  - *14
+- !ruby/object:Station
+  name: West Kensington
+  lines:
+  - *9
+  - *3
+- !ruby/object:Station
+  name: Kensington (Olympia)
+  lines:
+  - *9
+  - *3
+- !ruby/object:Station
+  name: Earl's Court
+  lines:
+  - *9
+  - *3
+  - *10
+  - *4
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Aldgate East
+  lines:
+  - *9
+  - *10
+  - *5
+- !ruby/object:Station
+  name: Whitechapel
+  lines:
+  - *9
+  - *10
+  - *5
+- !ruby/object:Station
+  name: Stepney Green
+  lines:
+  - *9
+  - *10
+  - *5
+- !ruby/object:Station
+  name: Bow Road
+  lines:
+  - *9
+  - *10
+  - *5
+- !ruby/object:Station
+  name: Wimbledon
+  lines:
+  - *10
+  - *4
+- !ruby/object:Station
+  name: Wimbledon Park
+  lines:
+  - *10
+  - *4
+- !ruby/object:Station
+  name: Southfields
+  lines:
+  - *10
+  - *4
+- !ruby/object:Station
+  name: East Putney
+  lines:
+  - *10
+  - *4
+- !ruby/object:Station
+  name: Putney Bridge
+  lines:
+  - *10
+  - *4
+- !ruby/object:Station
+  name: Parsons Green
+  lines:
+  - *10
+  - *4
+- !ruby/object:Station
+  name: Fulham Broadway
+  lines:
+  - *10
+  - *4
+- !ruby/object:Station
+  name: West Brompton
+  lines:
+  - *10
+  - *4
+- !ruby/object:Station
+  name: White City
+  lines:
+  - *5
+- !ruby/object:Station
+  name: King's Cross St. Pancras
+  lines:
+  - *5
+  - *11
+  - *13
+  - *14
+  - *16
+- !ruby/object:Station
+  name: St. Mary's (Whitechapel Road)
+  lines:
+  - *5
+- !ruby/object:Station
+  name: Stanmore
+  lines:
+  - *6
+- !ruby/object:Station
+  name: Canons Park
+  lines:
+  - *6
+- !ruby/object:Station
+  name: Queensbury
+  lines:
+  - *6
+- !ruby/object:Station
+  name: Kingsbury
+  lines:
+  - *6
+- !ruby/object:Station
+  name: Wembley Park
+  lines:
+  - *6
+  - *15
+- !ruby/object:Station
+  name: Neasden
+  lines:
+  - *6
+- !ruby/object:Station
+  name: Dollis Hill
+  lines:
+  - *6
+- !ruby/object:Station
+  name: Willesden Green
+  lines:
+  - *6
+- !ruby/object:Station
+  name: Kilburn
+  lines:
+  - *6
+- !ruby/object:Station
+  name: West Hampstead
+  lines:
+  - *6
+- !ruby/object:Station
+  name: Finchley Road
+  lines:
+  - *6
+  - *15
+- !ruby/object:Station
+  name: Swiss Cottage
+  lines:
+  - *6
+- !ruby/object:Station
+  name: St. John's Wood
+  lines:
+  - *6
+- !ruby/object:Station
+  name: Green Park
+  lines:
+  - *6
+  - *13
+  - *14
+  - *16
+- !ruby/object:Station
+  name: Aldwych
+  lines:
+  - *6
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Ludgate Circus
+  lines:
+  - *6
+- !ruby/object:Station
+  name: Fenchurch Street
+  lines:
+  - *6
+- !ruby/object:Station
+  name: Preston Road
+  lines:
+  - *15
+- !ruby/object:Station
+  name: Northwick Park
+  lines:
+  - *15
+- !ruby/object:Station
+  name: Harrow-on-the-Hill
+  lines:
+  - *15
+- !ruby/object:Station
+  name: West Harrow
+  lines:
+  - *15
+- !ruby/object:Station
+  name: Rayners Lane
+  lines:
+  - *15
+  - *13
+- !ruby/object:Station
+  name: Edgware
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Burnt Oak
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Colindale
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Hendon Central
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Brent Cross
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Golders Green
+  lines:
+  - *11
+- !ruby/object:Station
+  name: North End
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Hampstead
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Belsize Park
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Chalk Farm
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Camden Town
+  lines:
+  - *11
+  - *7
+- !ruby/object:Station
+  name: Mornington Crescent
+  lines:
+  - *11
+  - *7
+- !ruby/object:Station
+  name: Euston
+  lines:
+  - *11
+  - *7
+  - *16
+- !ruby/object:Station
+  name: Angel
+  lines:
+  - *11
+- !ruby/object:Station
+  name: City Road
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Old Street
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Lothbury
+  lines:
+  - *11
+- !ruby/object:Station
+  name: London Bridge
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Borough
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Kennington
+  lines:
+  - *11
+  - *7
+- !ruby/object:Station
+  name: Oval
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Stockwell
+  lines:
+  - *11
+  - *16
+- !ruby/object:Station
+  name: Clapham North
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Clapham Common
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Clapham South
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Balham
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Tooting Bec
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Tooting Broadway
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Colliers Wood
+  lines:
+  - *11
+- !ruby/object:Station
+  name: South Wimbledon
+  lines:
+  - *11
+- !ruby/object:Station
+  name: Morden
+  lines:
+  - *11
+- !ruby/object:Station
+  name: High Barnet
+  lines:
+  - *7
+- !ruby/object:Station
+  name: Totteridge and Whetstone
+  lines:
+  - *7
+- !ruby/object:Station
+  name: Woodside Park
+  lines:
+  - *7
+- !ruby/object:Station
+  name: West Finchley
+  lines:
+  - *7
+- !ruby/object:Station
+  name: Finchley Central
+  lines:
+  - *7
+- !ruby/object:Station
+  name: East Finchley
+  lines:
+  - *7
+- !ruby/object:Station
+  name: Highgate
+  lines:
+  - *7
+  - &17 !ruby/object:Line
+    name: Northern - ?????
+    forwards_direction: ''
+    backwards_direction: ''
+    stations:
+    - Highgate
+    - Archway
+    - Tufnell Park
+    - Kentish Town
+    - South Kentish Town
+    - Crouch End
+    - Stroud Green
+    - Finsbury Park
+    - Drayton Park
+    - Highbury & Islington
+    - Essex Road
+    - Nine Elms
+- !ruby/object:Station
+  name: Archway
+  lines:
+  - *7
+  - *17
+- !ruby/object:Station
+  name: Tufnell Park
+  lines:
+  - *7
+  - *17
+- !ruby/object:Station
+  name: Kentish Town
+  lines:
+  - *7
+  - *17
+- !ruby/object:Station
+  name: Warren Street
+  lines:
+  - *7
+  - *16
+- !ruby/object:Station
+  name: Goodge Street
+  lines:
+  - *7
+- !ruby/object:Station
+  name: Leicester Square
+  lines:
+  - *7
+  - *13
+  - *14
+- !ruby/object:Station
+  name: South Kentish Town
+  lines:
+  - *17
+- !ruby/object:Station
+  name: Crouch End
+  lines:
+  - *17
+- !ruby/object:Station
+  name: Stroud Green
+  lines:
+  - *17
+- !ruby/object:Station
+  name: Finsbury Park
+  lines:
+  - *17
+  - *13
+  - *14
+  - *16
+- !ruby/object:Station
+  name: Drayton Park
+  lines:
+  - *17
+- !ruby/object:Station
+  name: Highbury & Islington
+  lines:
+  - *17
+  - *16
+- !ruby/object:Station
+  name: Essex Road
+  lines:
+  - *17
+- !ruby/object:Station
+  name: Nine Elms
+  lines:
+  - *17
+- !ruby/object:Station
+  name: Cockfosters
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Oakwood
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Southgate
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Arnos Grove
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Bounds Green
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Wood Green
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Turnpike Lane
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Manor House
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Arsenal
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Holloway Road
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Caledonian Road
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: York Road
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Russell Square
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Covent Garden
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Down Street
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Hyde Park Corner
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Knightsbridge
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: Brompton Road
+  lines:
+  - *13
+  - *14
+- !ruby/object:Station
+  name: North Ealing
+  lines:
+  - *13
+- !ruby/object:Station
+  name: Park Royal
+  lines:
+  - *13
+- !ruby/object:Station
+  name: Park Royal & Twyford Abbey
+  lines:
+  - *13
+- !ruby/object:Station
+  name: Alperton
+  lines:
+  - *13
+- !ruby/object:Station
+  name: Sudbury Town
+  lines:
+  - *13
+- !ruby/object:Station
+  name: Sudbury Hill
+  lines:
+  - *13
+- !ruby/object:Station
+  name: South Harrow
+  lines:
+  - *13
+- !ruby/object:Station
+  name: Uxbridge
+  lines:
+  - *13
+- !ruby/object:Station
+  name: South Ealing
+  lines:
+  - *14
+- !ruby/object:Station
+  name: Northfields
+  lines:
+  - *14
+- !ruby/object:Station
+  name: Boston Manor
+  lines:
+  - *14
+- !ruby/object:Station
+  name: Osterley
+  lines:
+  - *14
+- !ruby/object:Station
+  name: Hounslow East
+  lines:
+  - *14
+- !ruby/object:Station
+  name: Hounslow Central
+  lines:
+  - *14
+- !ruby/object:Station
+  name: Hounslow West
+  lines:
+  - *14
+- !ruby/object:Station
+  name: Hatton Cross
+  lines:
+  - *14
+- !ruby/object:Station
+  name: Heathrow T123
+  lines:
+  - *14
+- !ruby/object:Station
+  name: Heathrow Terminal 5
+  lines:
+  - *14
+- !ruby/object:Station
+  name: Walthamstow Central
+  lines:
+  - *16
+- !ruby/object:Station
+  name: Blackhorse Road
+  lines:
+  - *16
+- !ruby/object:Station
+  name: Tottenham Hale
+  lines:
+  - *16
+- !ruby/object:Station
+  name: Seven Sisters
+  lines:
+  - *16
+- !ruby/object:Station
+  name: Pimlico
+  lines:
+  - *16
+- !ruby/object:Station
+  name: Vauxhall
+  lines:
+  - *16
+- !ruby/object:Station
+  name: Brixton
+  lines:
+  - *16
