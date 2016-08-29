@@ -9,11 +9,32 @@ module FancyGets
     loop do
       ch = STDIN.getch
       code = ch.ord
-      exit if code == 3 # CTRL-C
-      break if code == 13 # ENTER
-      if code == 27
+      case code
+      when 3 # CTRL-C
+        exit
+      when 13 # ENTER
+        break
+      when 27  # ESC -- which means lots of special stuff
         case ch = STDIN.getch.ord
-        when 91
+        when 79  # ESC -- which means lots of special stuff
+          puts "ESC 79"
+          case ch = STDIN.getch.ord
+          when 80 #F1
+            puts "F1"
+          when 81 #F2
+          when 82 #F3
+          when 83 #F4
+          when 84 #F5
+          when 85 #F6
+          when 86 #F7
+          when 87 #F8
+          when 88 #F9
+          when 89 #F10
+          when 90 #F11
+          when 91 #F12
+          when 92 #F13
+          end
+        when 91 # Special stuff
           case ch = STDIN.getch.ord
           when 68 # Arrow left
             if position > 0
@@ -31,15 +52,16 @@ module FancyGets
           #   puts "ESC #{ch}"
           end
         else
-          puts "ESC #{STDIN.getch.ord} #{STDIN.getch.ord}"
+          # Sometimes more, like for function keys
+          puts "code #{ch} #{STDIN.getch.ord} #{STDIN.getch.ord} #{STDIN.getch.ord} #{STDIN.getch.ord}"
         end
-      elsif code == 127 # Backspace
+      when 127 # Backspace
         if position > 0
           print "\b#{string[position..-1]} #{"\b" * (string.length - position + 1)}"
           string = string[0...position - 1] + string[position..-1]
           position -= 1
         end
-      elsif code == 126 # Delete (forwards)
+      when 126 # Delete (forwards)
         if position < string.length
           print "#{string[position + 1..-1]} #{"\b" * (string.length - position)}"
           string = string[0...position] + string[position + 1..-1]
